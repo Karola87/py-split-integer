@@ -13,6 +13,14 @@ def test_should_split_32_into_6_parts() -> None:
     assert split_integer(32, 6) == [5, 5, 5, 5, 6, 6]
 
 
+def test_should_split_8_into_1_part() -> None:
+    assert split_integer(8, 1) == [8]
+
+
+def test_should_split_6_into_2_parts() -> None:
+    assert split_integer(6, 2) == [3, 3]
+
+
 def test_result_length_matches_number_of_parts() -> None:
     result = split_integer(25, 7)
     assert len(result) == 7
